@@ -70,7 +70,7 @@ data = project_data_from_master('C:\\Users\\Standalone\\Will\\Q4 DCA Ratings and
 
 '''2) Specify the file path to master'''
 wb = load_workbook(
-    'C:\\Users\\Standalone\\Will\\masters folder\\core data\\master_4_2018_internal_format.xlsx')
+    'C:\\Users\\Standalone\\Will\\masters folder\\core data\\master_4_2018_wip.xlsx')
 ws = wb.active
 
 amended_master = put_into_master(data, ws)
@@ -82,4 +82,4 @@ programme. If you wanted to create a document that doesn't overwrite the master 
 a different filename (such as 'test'). However, you will need to save all changes into/overwrite the master at some 
 point - as it is the sole source of persistent final data.
 '''
-amended_master.save('C:\\Users\\Standalone\\Will\\masters folder\\core data\\master_4_2018_internal_format.xlsx')
+amended_master.save('C:\\Users\\Standalone\\Will\\masters folder\\core data\\master_4_2018_wip.xlsx')
