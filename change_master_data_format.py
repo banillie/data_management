@@ -33,12 +33,12 @@ def create_master(data, dm):
 '''1) file path to master containing data for which the order is to be changed'''
 
 master_order_to_be_altered = project_data_from_master("C:\\Users\\Standalone\\Will\\masters folder\\core data\\"
-                                      "master_4_2018.xlsx")
+                                                      "master_4_2018.xlsx")
 
 '''2) file path to dm setting out structure for the new format'''
-datamap = load_workbook("C:\\Users\\Standalone\\Will\\masters folder\\dms\\internal_dm_excel_master_for_merging.xlsx")
+datamap = load_workbook("C:\\Users\\Standalone\\Will\\masters folder\\dms\\merged_dm_excel_master.xlsx")
 
 output = create_master(master_order_to_be_altered, datamap)
 
 '''3) file path and name for new master that is being created'''
-output.save("C:\\Users\\Standalone\\Will\\masters folder\\core data\\master_4_2018_internal_format.xlsx")
+output.save("C:\\Users\\Standalone\\Will\\masters folder\\core data\\for_income.xlsx")
